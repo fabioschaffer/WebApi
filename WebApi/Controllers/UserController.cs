@@ -23,17 +23,23 @@ namespace WebApplication2 {
             //if (user == null)
             //    return NotFound(new { message = "Usuário ou senha inválidos" });
 
-            // Gera o Token
-            var token = TokenService.GenerateToken(user.Login);
 
-            // Oculta a senha
-            //user.Password = "";
+            if (user.Login == "adm") {
 
-            // Retorna os dados
-            return new {
-                user = user,
-                token = token
-            };
+                // Gera o Token
+                var token = TokenService.GenerateToken(user.Login);
+
+                // Oculta a senha
+                //user.Password = "";
+
+                // Retorna os dados
+                return new {
+                    user = user,
+                    token = token
+                };
+            } else {
+                return null;
+            }
         }
 
         [HttpGet]
