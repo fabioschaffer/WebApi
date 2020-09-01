@@ -13,9 +13,15 @@ namespace WebApplication2 {
             Name = pl.NAME;
         }
 
-        public static IEnumerable<Customer> List() {
+        public static IEnumerable<Customer> List(string name, string city) {
             List<Customer> lst = new List<Customer>();
-            foreach (dynamic item in BLL.DB.Query("SELECT ID, NAME from customer", null)) {
+            string sql = "SELECT ID, NAME from customer";
+            string where = "";
+            if (name != null)
+                where += (where == "" ? " WHERE " : " AND ") +  " Name LIKE '%" + name + "%'";
+            if (city != null)
+                where += (where == "" ? " WHERE " : " AND " ) + " City LIKE '%" + city + "%'";
+            foreach (dynamic item in BLL.DB.Query(sql + where, null)) {
                 lst.Add(new Customer(item));
             }
             //Thread.Sleep(2000);
