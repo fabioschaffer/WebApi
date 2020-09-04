@@ -8,12 +8,12 @@ namespace WebApplication2.Controllers {
     [EnableCors("MyPolicy")]
     [Route("[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class ValuesController : ControllerBase {
 
         [HttpGet]
-        public IEnumerable<Customer> Get(string  name, string city) {
-            return Customer.List(name,city);
+        public IEnumerable<Customer> Get(string name, string city) {
+            return Customer.List(name, city);
         }
 
         [HttpGet("{id}")]
