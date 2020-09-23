@@ -13,3 +13,6 @@ Pacotes Nuget utilizados:
       https://www.nuget.org/packages/Dapper/2.0.35
   - Microsoft.Data.SqlClient
       https://www.nuget.org/packages/Microsoft.Data.SqlClient/2.0.0
+	  
+IDE:
+  - Visual Studio Community 2019 (versão 16.7.2).
