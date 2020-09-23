@@ -8,10 +8,13 @@ Aplicativo Web API com as seguintes features:
   
 Pacotes Nuget utilizados:
   - Microsoft.AspNetCore.Authentication.JwtBearer
+  
       https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer/3.1.7
   - Dapper
+  
       https://www.nuget.org/packages/Dapper/2.0.35
   - Microsoft.Data.SqlClient
+  
       https://www.nuget.org/packages/Microsoft.Data.SqlClient/2.0.0
 	  
 IDE:
