@@ -4,16 +4,16 @@ Aplicativo Web API com as seguintes features:
   - Métodos acessíveis somente via autenticação ("Authorize").
   - Métodos do tipo HttpGet, HttpPost, HttpPut e HttpDelete.
   - Camada de negócio (Business Layer Logic).
-  - Acesso ao banco de dados MS SQL Server.
+  - Acesso ao banco de dados MS SQL Server 2016.
   
 Pacotes Nuget utilizados:
-  - Microsoft.AspNetCore.Authentication.JwtBearer
+  - Microsoft.AspNetCore.Authentication.JwtBearer (versao 3.1.7).
   
       https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer/3.1.7
-  - Dapper
+  - Dapper (versão 2.0.35).
   
       https://www.nuget.org/packages/Dapper/2.0.35
-  - Microsoft.Data.SqlClient
+  - Microsoft.Data.SqlClient (versão 2.0.0).
   
       https://www.nuget.org/packages/Microsoft.Data.SqlClient/2.0.0
 	  
